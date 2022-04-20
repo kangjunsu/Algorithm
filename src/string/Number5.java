@@ -11,7 +11,7 @@ public class Number5 {
 		int rt = str.length()-1;
 		
 		while(lt < rt) {
-			if(answer[lt] >= 65 && answer[lt] <= 122) {
+			if((answer[lt] >= 65 && answer[lt] <= 122) && (answer[rt] >= 65 && answer[rt] <= 122)) {
 				char temp = answer[lt];
 				answer[lt] = answer[rt];
 				answer[rt] = temp;				
